@@ -1,0 +1,28 @@
+package com.sliding.sol;
+
+public class MaxSubArrayOfSizeK {
+	
+	public static int maxSubarraySum(int[] arr, int k) {
+        // Code here
+		int sum=0;
+		int maxSum=0;
+		
+		
+		for(int i=0;i<k;i++) {
+			sum+= arr[i];
+			
+		}
+		
+		maxSum = sum;
+		for(int i=k;i<arr.length;i++) {
+			sum += arr[i];
+			sum -= arr[i-k];
+			
+			maxSum = Math.max(sum, maxSum);
+		}
+		
+		return maxSum;
+        
+    }
+
+}
