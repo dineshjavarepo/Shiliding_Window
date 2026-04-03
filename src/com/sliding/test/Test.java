@@ -8,6 +8,7 @@ import com.sliding.sol.LargeSubStringWithDistinctCharacters;
 import com.sliding.sol.LongestSubStringWithKDistincyCharacters;
 import com.sliding.sol.MaxSubArrayOfSizeK;
 import com.sliding.sol.MinSubArraySizeSum;
+import com.sliding.sol.SlidingWindowMaximum;
 
 public class Test {
 
@@ -22,6 +23,7 @@ public class Test {
 		System.out.println(MinSubArraySizeSum.minSubArrayLen(7,new int[] {2,3,1,2,4,3}));
         System.out.println(ContinousDulicateII.containsNearbyDuplicate(new int[] {1,2,3,1}, 3));
         System.out.println(LongestSubStringWithKDistincyCharacters.kDistinctChars(2, "abbbbbbc"));
+        System.out.println(SlidingWindowMaximum.maxSlidingWindow(new int[] {1,2,1,0,4,2,6}, 3));
 	}
 
 }
